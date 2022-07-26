@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>One Piece Survey</title>
+</head>
+<body>
+    <h1 id="title">One Piece Survey Form</h1>
+    <p id="description">This research aims to understand the reasons people don't want to watch One Piece</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label"><input type="text" id="name" placeholder="Input you full name" required> What's your name? </label>
+            <label id="email-label"><input type="email" id="email" placeholder="Input a valid email" required> What's your emai? </label>
+        </fieldset>
+        <fieldset>
+            <label id="number-label"><input type="number" id="number" min="0" max="1226" placeholder="Input the last episode number of One Piece you watched" required> What was the last episode of One Piece you watched? Type 0 for none.</label>
+            <label> What's your opinion on One Piece?
+                <select id="dropdown">
+                    <option value="">(Click and choice)</option>
+                    <option value="1">Very Good</option>
+                    <option value="2">Good</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Bad</option>
+                    <option value="5">Too Bad</option>
+                </select>
+            </label>
+            <label> Would you recommend One Piece for a friend?
+                <input type="radio" name="recommend" value="1">Yes
+                <input type="radio" name="recommend" value="0">No
+            </label>
+            <label> Do you like boats?
+                <input type="radio" name="boats" value="1">Yes
+                <input type="radio" name="boats" value="0">No
+            </label>
+            <label> What's your favorites 'nakamas'? You can type multiple options.
+                <input type="checkbox" name="characters" value="0">Monkey D. Luffy
+                <input type="checkbox" name="characters" value="1">Roronoa Zoro
+                <input type="checkbox" name="characters" value="2">Nami
+                <input type="checkbox" name="characters" value="3">Usopp
+                <input type="checkbox" name="characters" value="4">Vinsmoke Sanji
+                <input type="checkbox" name="characters" value="5">Tony Tony Chopper
+                <input type="checkbox" name="characters" value="6">Nico Robin
+                <input type="checkbox" name="characters" value="7">Franky
+                <input type="checkbox" name="characters" value="8">Brook
+                <input type="checkbox" name="characters" value="9">Jinbe
+            </label>    
+            <label> What's your favorites Sagas? You can type multiple options.
+                <input type="checkbox" name="sagas" value="0">East Blue
+                <input type="checkbox" name="sagas" value="1">Arabasta
+                <input type="checkbox" name="sagas" value="2">Sky Island
+                <input type="checkbox" name="sagas" value="3">Water 7
+                <input type="checkbox" name="sagas" value="4">Thriller Bark
+                <input type="checkbox" name="sagas" value="5">Summit War
+                <input type="checkbox" name="sagas" value="6">Fish-man Island
+                <input type="checkbox" name="sagas" value="7">Dressrosa
+                <input type="checkbox" name="sagas" value="8">Whole Cake Island
+                <input type="checkbox" name="sagas" value="9">Wano Country                                                 
+            </label>  
+            <label>
+                <textarea></textarea>
+            </label>     
+            <input type="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
