@@ -1,0 +1,39 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#img-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#image{
+    display: block;
+    width: 64%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+figcaption{
+    text-align: center;
+}
+#section{
+    width: 60%;
+    font-size: 16px;
+    margin: 25px;
+}
+#tribute-info{
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+a{
+    color: black;
+}
+#tribute-link-label{
+    padding-bottom: 50px;
+}
