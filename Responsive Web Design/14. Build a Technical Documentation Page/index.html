@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Technical Page</title>
+</head>
+<body>
+    <main class="main-doc">
+        <section class="main-section" id="What_is_HTML?">
+            <header>What is HTML?</header>
+            <p class="paragraph-section">
+                HTML (Hypertext Markup Language) is a markup language that 
+                tells web browsers how to structure the web pages you visit. 
+                It can be as complicated or as simple as the web developer 
+                wants it to be. HTML consists of a series of elements, which 
+                you use to enclose, wrap, or mark up different parts of content 
+                to make it appear or act in a certain way. The enclosing tags can 
+                make content into a hyperlink to connect to another page, italicize 
+                words, and so on. For example, consider the following line of text:
+            </p>
+            <pre class="pre-section">My cat is very grumpy</pre>
+            <p class="paragraph-section">
+                If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (<code>&ltp/&gt</code>) element:
+            </p>
+            <code class="code-section">
+                <p>My cat is very grumpy</p>
+            </code>
+        </section>
+        <section class="main-section" id="Anatomy_of_an_HTML_element">
+            <header>Anatomy of an HTML element</header>
+            <p class="paragraph-section">Let's further explore our paragraph element from the previous section:</p>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png" 
+            alt="A sample code snippet demonstrating the structure of an html element.<p> My cat is very grumpy </p>.">
+            <p class="paragraph-section">The anatomy of our element is:</p>
+            <ul>
+                <li>
+                    <strong>The opening tag:</strong> This consists of the name of the element (in this example, p for paragraph), 
+                    wrapped in opening and closing angle brackets. This opening tag marks where the element begins 
+                    or starts to take effect. In this example, it precedes the start of the paragraph text.
+                </li>
+                <li>
+                    <strong>The content:</strong> This is the content of the element. In this example, it is the paragraph text.
+                </li>
+                <li>
+                    <strong>The closing tag:</strong>This is the same as the opening tag, except that it includes a forward slash 
+                    before the element name. This marks where the element ends. Failing to include a closing tag is a common 
+                    beginner error that can produce peculiar results.
+                </li>
+            </ul>
+            <p class="paragraph-section">
+                The element is the opening tag, followed by content, followed by the closing tag.
+            </p>
+        </section>
+        <section class="main-section" id="Nesting_elements">
+            <header>Nesting elements</header>
+            <p class="paragraph-section">
+                Elements can be placed within other elements. This is called nesting. If we wanted to state 
+                that our cat is very grumpy, we could wrap the word very in a <code> &ltstrong/&gt </code> 
+                element, which means that the word is to have strong(er) text formatting:
+            </p>
+            <code class="code-section">
+                &ltp&gtMy cat is &ltstrong&gt very &ltstrong/&gt grumpy.&ltp/&gt
+            </code>
+            <p class="paragraph-section">
+                There is a right and wrong way to do nesting. In the example above, we opened the p element 
+                first, then opened the strong element. For proper nesting, we should close the strong element 
+                first, before closing the p.
+            </p>
+            <code class="code-section error">
+                &ltp&gtMy cat is &ltstrong&gt very grumpy.&ltp/&gt&ltstrong/&gt
+            </code>
+            <p class="paragraph-section">
+                The tags have to open and close in a way that they are inside or outside one another. 
+                With the kind of overlap in the example above, the browser has to guess at your intent. 
+                This kind of guessing can result in unexpected results.
+            </p>
+        </section>
+        <section class="section-main" id="Block_versus_inline_elements">
+            <header>Block versus inline elements</header>
+            <p class="paragraph-section">
+                There are two important categories of elements to know in HTML: block-level elements and inline elements.
+            </p>
+            <ul>
+                <li>
+                    Block-level elements form a visible block on a page. A block-level element appears on a new line 
+                    following the content that precedes it. Any content that follows a block-level element also appears 
+                    on a new line. Block-level elements are usually structural elements on the page. For example, a 
+                    block-level element might represent headings, paragraphs, lists, navigation menus, or footers. 
+                    A block-level element wouldn't be nested inside an inline element, but it might be nested inside 
+                    another block-level element.
+                </li>
+                <li>
+                    Inline elements are contained within block-level elements, and surround only small parts of the document's 
+                    content (not entire paragraphs or groupings of content). An inline element will not cause a new line to appear 
+                    in the document. It is typically used with text, for example an &lta&gt element creates a hyperlink, and elements 
+                    such as &ltem&gt or &ltstrong&gt create emphasis.
+                </li>
+            </ul>
+            <p class="paragraph-section">Consider the following example:</p>
+            <code class="code-section">
+                <p>&ltem&gtfirst&ltem/&gt&ltem&gtsecond&ltem/&gt&ltem&gtthird&ltem/&gt</p>
+                <p>&ltp&gtfourth&ltp/&gt&ltp&gtfifth&ltp/&gt&ltp&gtsixth&ltp/&gt</p>
+            </code>
+            <p class="paragraph-section"></p>
+            <p class="paragraph-section"></p>
+            <p class="paragraph-section"></p>
+            <p class="paragraph-section"></p>
+            <p class="paragraph-section"></p>
+            <p class="paragraph-section"></p>
+            <p class="paragraph-section"></p>
+        </section>
+    </main>
+</body>
+</html>
